@@ -23,8 +23,6 @@ function twitter() {
         }
     });
 }
-
-
 //OMDB function
 function movieThis(movieTitle) {
         var omdbQueryUrl = "http://www.omdbapi.com/?t=" + movieTitle + "&y=&plot=short&apikey=40e9cece";
@@ -32,7 +30,6 @@ function movieThis(movieTitle) {
         request(omdbQueryUrl, function(error, response, body) {
     
             if (!error && response.statusCode === 200) {
-    
                 console.log("Title: " + JSON.parse(body).Title);
                 console.log("Release Year: " + JSON.parse(body).Year);
                 console.log("The movie's IMDB rating is: " + JSON.parse(body).imdbRating);
@@ -93,7 +90,6 @@ function command(){
             console.log("Song Name: The Sign");
             console.log("Artist: Ace of Base");
         }
-    
         else if (process.argv[3] != undefined || process.argv[3] != null){
             spotify(process.argv[3]);
         }
