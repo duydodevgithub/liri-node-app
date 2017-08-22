@@ -32,11 +32,11 @@ function movieThis(movieTitle) {
             if (!error && response.statusCode === 200) {
                 console.log("Title: " + JSON.parse(body).Title);
                 console.log("Release Year: " + JSON.parse(body).Year);
+                console.log("This movie's plot: " + JSON.parse(body).Plot);
+                console.log("Actors in this movie: " + JSON.parse(body).Actors);
                 console.log("The movie's rating is: " + JSON.parse(body).imdbRating);
                 console.log("Country: " + JSON.parse(body).Country);
                 console.log("Language: " + JSON.parse(body).Language);
-                console.log("This movie's plot: " + JSON.parse(body).Plot);
-                console.log("Actors in this movie: " + JSON.parse(body).Actors);
                 console.log("Rotten Tomatoes rating: " + JSON.parse(body).Ratings[1].Value); 
             }
         });
