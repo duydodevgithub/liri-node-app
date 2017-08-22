@@ -25,7 +25,7 @@ function twitter() {
 }
 //OMDB function
 function movieThis(movieTitle) {
-        var omdbQueryUrl = "http://www.omdbapi.com/?t=" + movieTitle + "&y=&plot=short&apikey=40e9cece";
+        var omdbQueryUrl = "http://www.omdbapi.com/?t=" + movieTitle + "&y=&plot=short&apikey=e0a594ab";
     
         request(omdbQueryUrl, function(error, response, body) {
     
