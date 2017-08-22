@@ -14,7 +14,7 @@ function twitter() {
         access_token_key: keyList.access_token_key,
         access_token_secret: keyList.access_token_secret
     });
-    var params = { screen_name: 'nancywhocodes' };
+    var params = { screen_name: 'duydo' };
     client.get('statuses/user_timeline', params, function(error, tweets, response) {
         if (!error) {
             for (i = 0; i < tweets.length; i++) {
